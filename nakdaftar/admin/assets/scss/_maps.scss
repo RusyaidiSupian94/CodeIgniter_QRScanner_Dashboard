@@ -1,0 +1,36 @@
+/*
+Maps style
+*/
+.gmap-marker{
+    background-color: $primary;
+    position: relative;
+    padding:.5rem 1rem;
+    text-align: center;
+    min-width: 5rem;
+    border-radius: 5px;
+    box-shadow: 4px 0px 10px 1px rgba($primary,.2);
+    font-size:.875rem;
+    color:$primary-light;
+    &:before,&:after{
+        top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+    }
+    &:before{
+        border-color: rgba(194, 225, 245, 0);
+	border-top-color: $primary;
+	border-width: 11px;
+	margin-left: -11px;
+    }
+    &:after{
+        border-color: rgba(136, 183, 213, 0);
+	border-top-color:$primary;
+	border-width: 5px;
+	margin-left: -5px;
+    }
+}

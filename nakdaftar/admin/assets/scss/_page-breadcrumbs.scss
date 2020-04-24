@@ -1,0 +1,67 @@
+/*
+page breadcrumbs
+*/
+.page-subheader{
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    position:relative;
+    background-color: $light;
+    border-bottom:1px solid $border;
+    h3{
+        font-weight: 400;
+        margin-bottom: 0px;
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+    .breadcrumb{
+        .breadcrumb-item{
+            color: inherit;
+            i.mr-2{
+                margin-right: 0!important;
+            }
+            &.active{
+                opacity: .6;
+            }
+        }
+    }
+    .list-item{
+        padding: 0px;
+    }
+    .list-body{
+        padding: 5px 0;
+    }
+    .list-thumb{
+        line-height: 1.2;
+        margin-left:0px;
+        width:auto!important;
+        padding:.15rem;
+        padding-left: 0px;
+        height: auto!important;
+        overflow:visible;
+        >i{
+            font-size: 24px!important;
+        }
+    }
+}
+
+.page-header-space{
+  padding-top:2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  h4{
+      margin-bottom: 0px;
+  }
+}
+.page-header-img{
+    position: absolute;
+    left:0;
+    top:0;
+    background-color:$primary;
+   width:100%;
+    img{
+        opacity: .15;
+        left:0;
+        width: 100%;
+        top:0;
+    }
+}

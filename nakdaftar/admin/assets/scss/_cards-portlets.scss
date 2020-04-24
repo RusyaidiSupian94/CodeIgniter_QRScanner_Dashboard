@@ -1,0 +1,348 @@
+/*** portlet cards**/
+
+.portlet-box{
+    display: block;
+    position: relative;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    border:1px solid $border;
+    width:100%;
+    background-color:#fff;
+    .portlet-header{
+        width:100%;
+        position: relative;
+        padding: .5rem 1rem;
+        min-height: 50px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-color:inherit;
+        h3{
+            font-size:1rem;
+            text-transform: capitalize;
+            margin: 0px;
+            display: block;
+            font-weight: 600;
+            color:inherit;
+        }
+        .portlet-subtitle{
+            font-size: .8rem;
+            line-height: 1.5;
+            opacity: .6;
+            padding-top:0!important;
+        }
+    }
+    .portlet-body{
+        width:100%;
+        padding: 1rem;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-left-radius:3px;
+        border-bottom-right-radius:3px;
+    }
+    .portlet-tools{
+        position:relative;
+        .nav{
+            .nav-link{
+                padding: .2rem .3rem;
+                color:inherit;
+                >i{
+                    line-height: inherit;
+                    font-size: 13px;
+                    &[class^="icon-"], &[class*=" icon-"] {
+                        font-size: 24px;
+                    }
+                }
+            }
+            >*{
+                margin-left: .5rem;
+            }
+        }
+    }
+}
+.portlet-box.portlet-primary{
+    border-color: $primary;
+    .portlet-header{
+        background-color: $primary;
+        border-bottom-color: $primary!important;
+    }
+}
+.portlet-box.portlet-info{
+    border-color: $info;
+    .portlet-header{
+        background-color: $info;
+        border-bottom-color: $info!important;
+    }
+}
+.portlet-box.portlet-success{
+    border-color: $success;
+    .portlet-header{
+        background-color: $success;
+        border-bottom-color: $success!important;
+    }
+}
+.portlet-box.portlet-danger{
+    border-color: $danger;
+    .portlet-header{
+        background-color: $danger;
+        border-bottom-color: $danger!important;
+    }
+}
+.portlet-box.portlet-warning{
+    border-color: $warning;
+    .portlet-header{
+        background-color: $warning;
+        border-bottom-color: $warning!important;
+    }
+}
+.portlet-box.portlet-teal{
+    border-color: $teal;
+    .portlet-header{
+        background-color: $teal;
+        border-bottom-color: $teal!important;
+    }
+}
+.portlet-box.portlet-purple{
+    border-color: $purple;
+    .portlet-header{
+        background-color: $purple;
+        border-bottom-color: $purple!important;
+    }
+}
+.portlet-box.portlet-pink{
+    border-color: $pink;
+    .portlet-header{
+        background-color: $pink;
+        border-bottom-color: $pink!important;
+    }
+}
+.portlet-box.portlet-dark{
+    border-color: $dark;
+    .portlet-header{
+        background-color: $dark;
+        border-bottom-color: $dark!important;
+    }
+}
+.portlet-box.portlet-secondary{
+    border-color: $secondary;
+    .portlet-header{
+        background-color: $secondary;
+        border-bottom-color: $secondary!important;
+    }
+}
+.portlet-box.portlet-light{
+    border-color: $border;
+    .portlet-header{
+        background-color: $light;
+    }
+}
+.portlet-box.portlet-square{
+    border-radius: 0px;
+    >*{
+        border-radius: 0px!important;
+    }
+}
+.portlet-box.portlet-shadow-sm{
+    box-shadow: 0 0px 1px rgba($border,1);
+    border:0px;
+}
+.portlet-box.portlet-shadow{
+     box-shadow: 0 2px 10px rgba($dark,.1), 0 -2px 0 rgba($border,1);
+    border:0px;
+}
+.portlet-box.portlet-shadow-lg{
+    box-shadow: 0 5px 40px 12px rgba($border,1);
+    border:0px;
+}
+
+/**portlet dark skin **/
+.portlet-box.skin-dark{
+    .portlet-header{
+        h3,a:not(.dropdown-item):not(.btn),a.nav-link{
+            color: #fff;
+        }
+    }
+}
+.portlet-box.skinFull-dark{
+    color:rgba($white,1);
+    &.portlet-primary{
+        background-color: $primary;
+        border-color: rgba($primary-active,.5)!important;
+        .portlet-header,.portlet-body{
+            background-color: $primary;
+        }
+        .portlet-header{
+            border-bottom-color: rgba($primary-light,.25)!important;
+        }
+    }
+    &.portlet-pink{
+        background-color: $pink;
+        border-color: rgba($pink-active,.5)!important;
+        .portlet-header,.portlet-body{
+            background-color: $pink;
+        }
+        .portlet-header{
+            border-bottom-color: rgba($pink-light,.25)!important;
+        }
+    }
+    &.portlet-dark{
+        background-color: $dark;
+        border-color: rgba($dark-active,.5)!important;
+        .portlet-header,.portlet-body{
+            background-color: $dark;
+        }
+        .portlet-header{
+            border-bottom-color: rgba($dark-light,.25)!important;
+        }
+    }
+    &.portlet-teal{
+        background-color: $teal;
+        border-color: rgba($teal-active,.5)!important;
+        .portlet-header,.portlet-body{
+            background-color: $teal;
+        }
+        .portlet-header{
+            border-bottom-color: rgba($teal-light,.25)!important;
+        }
+    }
+    &.portlet-info{
+        background-color: $info;
+        border-color: rgba($info-active,.5)!important;
+        .portlet-header,.portlet-body{
+            background-color: $info;
+        }
+        .portlet-header{
+            border-bottom-color: rgba($info-light,.25)!important;
+        }
+    }
+    &.portlet-success{
+        background-color: $success;
+        border-color: rgba($success-active,.5)!important;
+        .portlet-header,.portlet-body{
+            background-color: $success;
+        }
+        .portlet-header{
+            border-bottom-color: rgba($success-light,.25)!important;
+        }
+    }
+    &.portlet-danger{
+        background-color: $danger;
+        border-color: rgba($danger-active,.5)!important;
+        .portlet-header,.portlet-body{
+            background-color: $danger;
+        }
+        .portlet-header{
+            border-bottom-color: rgba($danger-light,.25)!important;
+        }
+    }
+    &.portlet-warning{
+        background-color: $warning;
+        border-color: rgba($warning-active,.5)!important;
+        .portlet-header,.portlet-body{
+            background-color: $warning;
+        }
+        .portlet-header{
+            border-bottom-color: rgba($warning-light,.25)!important;
+        }
+    }
+    &.portlet-purple{
+        background-color: $purple;
+        border-color: rgba($purple-active,.5)!important;
+        .portlet-header,.portlet-body{
+            background-color: $purple;
+        }
+        .portlet-header{
+            border-bottom-color: rgba($purple-light,.25)!important;
+        }
+    }
+    &.portlet-secondary{
+        background-color: $secondary;
+        border-color: rgba($secondary-active,.5)!important;
+        .portlet-header,.portlet-body{
+            background-color: $secondary;
+        }
+        .portlet-header{
+            border-bottom-color: rgba($secondary-light,.25)!important;
+        }
+    }
+}
+.portlet-box .portlet-header .portlet-tools{
+    .nav-link{
+        padding: .25rem .5rem;
+        &.active{
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+}
+.portlet-box.portlet-fullHeight{
+    height: calc(100% - 30px);
+}
+.card-header{
+    border-color: $border;
+    background-color: $light;
+}
+.note-editor.note-frame.card{
+    .modal-dialog{
+        margin: .5rem!important;
+    }
+
+}
+.note-popover .popover-content, .card-header.note-toolbar {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.note-editor.note-frame{
+    border-color: $border;
+    .dropdown-menu{
+        padding: 2px;
+    }
+}
+.note-editable.card-block{
+    p{
+        margin-bottom: 0px;
+    }
+}
+/**jvector map custom**/
+.jvectormap-zoomin {
+    top: 0px;
+}
+.jvectormap-zoomout{
+    top:30px;
+}
+.jvectormap-zoomin, .jvectormap-zoomout {
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+}
+
+/** profile card **/
+.profile-content{
+    position: relative;
+    padding-top:5rem!important;
+    .profile-cover{
+        position: absolute;
+        left:0;
+        top:0;
+        z-index: -1;
+        background-color: $white;
+        >*{
+            opacity: .25;
+        }
+    }
+}
+
+
+
+/***bootstrap cards**/
+.card{
+    border-color: $border;
+}
+.card-header{
+    padding: .5rem 1rem;
+    background-color:#fff;
+}
+.note-editor.note-frame.card{
+    position: relative;
+    display: block!important;
+    flex: inherit!important;
+}

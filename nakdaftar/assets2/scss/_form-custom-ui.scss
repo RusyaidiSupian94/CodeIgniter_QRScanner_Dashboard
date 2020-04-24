@@ -1,0 +1,804 @@
+/*
+form custom ui style for assan admin....
+*/
+.tooltip{
+    z-index: 9999;
+}
+.form-control::-webkit-input-placeholder,.note-placeholder {
+    transition: opacity .3s;
+    color: rgba($text-body,.5);
+    font-weight: 400;
+    opacity: 1
+}
+
+.form-control:-ms-input-placeholder,.form-control::-ms-input-placeholder {
+    transition: opacity .3s;
+    color: rgba($text-body,.5);
+    font-weight: 400;
+    opacity: 1
+}
+
+.form-control::placeholder {
+    transition: opacity .3s;
+    color: rgba($text-body,.5);
+    font-weight: 400;
+    opacity: .95
+}
+.form-control.form-control-light::placeholder{
+    color: rgba($light,.5);
+}
+.form-control:focus::-webkit-input-placeholder {
+    opacity: .5
+}
+
+.form-control:focus:-ms-input-placeholder,.form-control:focus::-ms-input-placeholder {
+    opacity: .5
+}
+
+.form-control:focus::placeholder {
+    opacity: .5
+}
+.form-control,select.form-control{
+    border:1px solid rgba($border,1);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    font-size:.8rem;
+    padding: .45rem .75rem;
+    background-color:rgba($light,0);
+    &.form-control-bBottom{
+        border:1px solid rgba($light,1);
+        border-radius: 0px;
+        padding-left: 1rem;
+        border-left:0px;
+        border-right:0px;
+        border-top:0px;
+        &:focus{
+            box-shadow:none;
+        }
+    }
+    &:focus{
+        background-color:rgba($light,.55);
+        border-color:rgba($primary,.5);
+        box-shadow:0px 0px 6px 1px rgba($primary,.1);
+    }
+    &.disabled,&[disabled],&[readonly]{
+        background-color:rgba($light,.15);
+    }
+    &.error{
+        border-color: $danger;
+        background-color:rgba($danger,.1);
+        box-shadow:0px 0px 5px 2px rgba($danger,.15);
+    }
+    &.valid{
+        border-color: $success;
+        background-color:rgba($success,.1);
+        box-shadow:0px 0px 5px 2px rgba($success,.15);
+    }
+     &::-webkit-input-placeholder { 
+        color:rgba($dark,.6);
+    }
+    &::-moz-placeholder { 
+       color:rgba($dark,.6);
+    }
+    &:-ms-input-placeholder {
+        color:rgba($dark,.6);
+    }
+    &:-moz-placeholder { 
+        color:rgba($dark,.6);
+    }
+}
+.dropzone{
+    border-color: $border;
+}
+.form-control-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-append > .btn, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-prepend > .input-group-text{
+    padding: .75rem 1rem;
+    font-size: 1rem;
+}
+select.form-control-sm,.form-control-sm, .input-group-sm>.form-control, .input-group-sm>.input-group-append>.btn, .input-group-sm>.input-group-append>.input-group-text, .input-group-sm>.input-group-prepend>.btn, .input-group-sm>.input-group-prepend>.input-group-text{
+    padding: .15rem .5rem;
+    font-size: .7rem;
+}
+.input-group-text{
+    border-color: $border;
+}
+.search-form-o{
+    position: relative;
+    button[type="submit"],button[type="button"],input[type="submit"],input[type="button"]{
+        position: absolute;
+        right: 10px;
+        top: 2px;
+        height: 100%;
+        font-size: 16px;
+        opacity: .6;
+    }
+}
+.form-control-light{
+    background-color: rgba($primary-active,.05);
+    color: #fff;
+    border-color: rgba($primary-light,.15);
+    &:focus{
+        background-color:  rgba($primary-light,.12);
+        border-color: rgba($primary-light,.75);
+        color: #fff;
+    }
+}
+.form-control.form-control-light::-webkit-input-placeholder{
+    color: rgba($light,.5);
+}
+select.form-control:not([size]):not([multiple]){
+    height: auto!important;
+}
+label.error,label.valid{
+    display:block;
+    clear:both;
+    width:100%;
+    padding-top:10px;
+    &:before,&:after{
+        content: "";
+        display: table;
+        clear:both;
+        width:100%;
+    }
+}
+label.error,.invalid-feedback{
+    color: $danger;
+    font-size: 90%;
+}
+label.valid,.valid-feedback{
+    color: $success;
+    font-size: 90%;
+}
+.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid{
+    border-color: $danger;
+}
+.custom-select.is-valid, .form-control.is-valid, .was-validated .custom-select:valid, .was-validated .form-control:valid {
+    border-color: $success;
+}
+.custom-select.is-valid:focus, .form-control.is-valid:focus, .was-validated .custom-select:valid:focus, .was-validated .form-control:valid:focus{
+    border-color: $success;
+    background-color:rgba($success,.1);
+    box-shadow:0px 0px 5px 2px rgba($success,.15);
+}
+.custom-select.is-invalid:focus, .form-control.is-invalid:focus, .was-validated .custom-select:invalid:focus, .was-validated .form-control:invalid:focus{
+    border-color: $danger;
+    background-color:rgba($danger,.1);
+    box-shadow:0px 0px 5px 2px rgba($danger,.15);
+}
+.form-check-input.is-invalid~.form-check-label, .was-validated .form-check-input:invalid~.form-check-label{
+    color: $danger;
+}
+.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: $success;
+}
+.custom-file-label,.custom-file-label::after{
+    padding: .6rem .75rem;
+}
+/**input groups**/
+.input-group-text{
+    background-color: $light;
+    border-color: $faded;
+    color:$text-body;
+    font-size: .8rem;
+}
+.input-icon-group{
+    margin-bottom:1rem;
+    &:after{
+        content: "";
+        display: table;
+        clear:both;
+        width:100%;
+    }
+    .input-icon-append{
+        position: relative;
+        display:block;
+        i{
+            position: relative;
+            float:left;
+            border:1px solid $border;
+            border-right: 0px;
+            width:2.5rem;
+            float:left;
+            height:35px;
+            display: block;
+            right:-1px;
+            align-items: center;
+            justify-content: center;
+            text-align:center;
+            font-size: .85rem;
+            line-height: 35px;
+            border-top-left-radius:4px;
+            border-bottom-left-radius:4px;
+            &[class^="icon-"], &[class*=" icon-"]{
+                font-size: 16px; 
+            }
+            &:before,&:after{
+                opacity: .3;
+            }
+        }
+        .form-control{
+            float:right;
+            width: calc(100% - 2.5rem);
+            position:relative;
+            height:35px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            font-size: .8rem;
+        }
+
+    }
+    &.input-icon-right{
+        .input-icon-append{
+            i{
+                float:right;
+                right: 1px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                border: 1px solid $border;
+                border-left: 0px;
+            }
+            .form-control{
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                float:left;
+            }
+        }
+    }
+    &.input-icon-sm{
+        .input-icon-append{
+            .form-control{
+                height: 28px;
+                font-size: .7rem;
+                width: calc(100% - 2rem);
+            }
+            i{
+                font-size: .75rem;
+                width:2rem;
+                height:28px;
+                line-height:28px;
+                &[class^="icon-"], &[class*=" icon-"]{
+                    font-size: 16px; 
+                }
+            }
+        }
+    }
+    &.input-icon-lg{
+        .input-icon-append{
+            .form-control{
+                height: 44px;
+                font-size: 1rem;
+                width: calc(100% - 3rem);
+            }
+            i{
+                font-size: 18px;
+                width:3rem;
+                height:44px;
+                line-height:44px;
+                &[class^="icon-"], &[class*=" icon-"]{
+                    font-size: 24px; 
+                }
+            }
+        }
+    }
+}
+.input-icon-group.input-icon-dark{
+    .input-icon-append i{
+       border-color: rgba(229, 242, 255, 0.15);
+       border-right-color: rgba(229, 242, 255, 0.15);
+       color:$text-light;
+           background-color: rgba(16, 114, 206, 0.05);
+    }
+}
+/***********checkboxes***/
+.customUi-checkbox,.customUi-radio,.customUi-switchToggle{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -user-select: none;
+    display: inline-block;  
+    vertical-align:middle;
+    label{
+        display: block !important;
+        cursor: pointer;
+        span.label-helper{
+            line-height: inherit;
+            display: inline-block;
+            margin-left: .5rem;
+            vertical-align: middle;
+        }
+    }
+    input{
+        opacity: 0 !important;
+        height: 20px !important;
+        width: 20px !important;
+        position: absolute !important;
+    }
+}
+.customUi-checkbox{
+    padding: 0;
+    label .label-checkbox{
+        background: none;
+        border: 2px solid $faded;
+        text-align: center;
+        position: relative;
+        width:20px;
+        height: 20px;
+        border-radius: 2px;
+        background: $white;
+        margin:0px;
+        display:inline-block;
+        vertical-align:middle;
+        transition:all .3s;
+        -webkit-transition:all .3s;
+        &:before {
+            content: '';
+            left: 0;
+            border-radius: 2px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba($light,1);
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            -webkit-transition: 0.3s ease-in-out;
+            -moz-transition: 0.3s ease-in-out;
+        }
+    }
+    input:checked + label .label-checkbox:before,input:checked + label + label .label-checkbox:before {
+        animation: pulse .45s ease forwards;
+        -webkit-animation: pulse .45s ease forwards;
+    }
+    input:checked + label .label-checkbox,input:checked + label + label .label-checkbox {
+        border-color: $faded;
+        background: $faded;
+    }
+    input:checked + label .label-checkbox:after,input:checked + label + label .label-checkbox:after {
+        display: table;
+        width: 6px;
+        height:10px;
+        border: 2px solid;
+        border-top: 0;
+        border-left: 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        color: $text-body;
+        position: absolute;
+        left: 5px;
+        text-align: center;
+        top: 2px;
+        content: "";
+        text-align: center;
+    }
+}
+.customUi-checkbox.checkboxUi-primary{
+    label .label-checkbox{border-color: $primary-light;&:before{border-color: $primary;}}
+    input:checked + label .label-checkbox{border-color: $primary;background: $primary;}
+    input:checked + label .label-checkbox:after{color: $primary-light;}
+}
+.customUi-checkbox.checkboxUi-success{
+    label .label-checkbox{border-color: $success-light;&:before{border-color: $success;}}
+    input:checked + label .label-checkbox{border-color: $success;background: $success;}
+    input:checked + label .label-checkbox:after{color: $success-light;}
+}
+.customUi-checkbox.checkboxUi-danger{
+    label .label-checkbox{border-color: $danger-light;&:before{border-color: $danger;}}
+    input:checked + label .label-checkbox{border-color: $danger;background: $danger;}
+    input:checked + label .label-checkbox:after{color: $danger-light;}
+}
+.customUi-checkbox.checkboxUi-warning{
+    label .label-checkbox{border-color: $warning-light;&:before{border-color: $warning;}}
+    input:checked + label .label-checkbox{border-color: $warning;background: $warning;}
+    input:checked + label .label-checkbox:after{color: $warning-light;}
+}
+.customUi-checkbox.checkboxUi-info{
+    label .label-checkbox{border-color: $info-light;&:before{border-color: $info;}}
+    input:checked + label .label-checkbox{border-color: $info;background: $info;}
+    input:checked + label .label-checkbox:after{color: $info-light;}
+}
+.customUi-checkbox.checkboxUi-purple{
+    label .label-checkbox{border-color: $purple-light;&:before{border-color: $purple;}}
+    input:checked + label .label-checkbox{border-color: $purple;background: $purple;}
+    input:checked + label .label-checkbox:after{color: $purple-light;}
+}
+.customUi-checkbox.checkboxUi-teal{
+    label .label-checkbox{border-color: $teal-light;&:before{border-color: $teal;}}
+    input:checked + label .label-checkbox{border-color: $teal;background: $teal;}
+    input:checked + label .label-checkbox:after{color: $teal-light;}
+}
+.customUi-checkbox.checkboxUi-dark{
+    label .label-checkbox{border-color: $dark-light;&:before{border-color: $dark;}}
+    input:checked + label .label-checkbox{border-color: $dark;background: $dark;}
+    input:checked + label .label-checkbox:after{color: $dark-light;}
+}
+.customUi-checkbox.checkboxUi-pink{
+    label .label-checkbox{border-color: $pink-light;&:before{border-color: $pink;}}
+    input:checked + label .label-checkbox{border-color: $pink;background: $pink;}
+    input:checked + label .label-checkbox:after{color: $pink-light;}
+}
+.customUi-checkbox{
+    input:disabled + label{
+        opacity: .6;
+        pointer-events: none;
+    }
+    &.checkbox-square{
+        label .label-checkbox{
+            border-radius: 0px;
+            &:before{
+                border-radius: 0px;
+            }
+        }
+    }
+    &.checkbox-rounded{
+        label .label-checkbox{
+            border-radius: 100px;
+            &:before{
+                border-radius: 100px;
+            }
+        }
+    }
+}
+.customUi-radio{
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    label .label-radio{
+        background: none;
+        border: 2px solid $faded;
+        text-align: center;
+        position: relative;
+        width:20px;
+        height: 20px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        background: transparent;
+        margin:0px;
+        display:inline-block;
+        vertical-align:middle;
+        transition:all .3s;
+        -webkit-transition:all .3s;
+        &:before {
+            content: '';
+            left: 0;
+            border-radius: 100px;
+            -webkit-border-radius: 100px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity:0;
+            border: 1px solid rgba($faded,1);
+            transition: 0.3s ease-in-out;
+            -webkit-transition: 0.3s ease-in-out;
+            -moz-transition: 0.3s ease-in-out;
+        }
+    }
+    input:checked + label .label-radio{
+        &:after{
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 100px;
+            -webkit-border-radius: 100px;
+            text-align: center;
+            top: 50%;
+            left:50%;
+            margin-left: -4px;
+            margin-top: -4px;
+            font-size: 9px;
+            position: absolute;
+            background-color: $secondary;
+        }
+    }
+    input:checked + label .label-radio:before {
+        animation: pulse .45s ease forwards;
+        -webkit-animation: pulse .45s ease forwards;
+    }
+    &.radio-square{
+        label .label-radio,label .label-radio:before,input:checked + label .label-radio:after{
+            border-radius: 0px;
+            -webkit-border-radius: 0px;
+        } 
+    }
+    &.radio-radius{
+        label .label-radio,label .label-radio:before,input:checked + label .label-radio:after{
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+        }
+    }
+    input:disabled + label{
+        opacity: .5;
+        pointer-events: none;
+    }
+    &.radioUi-primary{
+        label .label-radio{border-color: $primary-light;&:before,&:after{border-color:$primary;}}
+        input:checked + label .label-radio{&:after{background-color: $primary;}}
+    }
+    &.radioUi-info{
+        label .label-radio{border-color: $info-light;&:before,&:after{border-color:$info;}}
+        input:checked + label .label-radio{&:after{background-color: $info;}}
+    }
+    &.radioUi-danger{
+        label .label-radio{border-color: $danger-light;&:before,&:after{border-color:$danger;}}
+        input:checked + label .label-radio{&:after{background-color: $danger;}}
+    }
+    &.radioUi-success{
+        label .label-radio{border-color: $success-light;&:before,&:after{border-color:$success;}}
+        input:checked + label .label-radio{&:after{background-color: $success;}}
+    }
+    &.radioUi-warning{
+        label .label-radio{border-color: $warning-light;&:before,&:after{border-color:$warning;}}
+        input:checked + label .label-radio{&:after{background-color: $warning;}}
+    }
+    &.radioUi-teal{
+        label .label-radio{border-color: $teal-light;&:before,&:after{border-color:$teal;}}
+        input:checked + label .label-radio{&:after{background-color: $teal;}}
+    }
+    &.radioUi-purple{
+        label .label-radio{border-color: $purple-light;&:before,&:after{border-color:$purple;}}
+        input:checked + label .label-radio{&:after{background-color: $purple;}}
+    }
+    &.radioUi-pink{
+        label .label-radio{border-color: $pink-light;&:before,&:after{border-color:$pink;}}
+        input:checked + label .label-radio{&:after{background-color: $pink;}}
+    }
+    &.radioUi-dark{
+        label .label-radio{border-color: $dark-light;&:before,&:after{border-color:$dark;}}
+        input:checked + label .label-radio{&:after{background-color: $dark;}}
+    }
+}
+
+
+/**switch toggler**/
+.customUi-switchToggle{
+    label .label-switchToggle{
+        width:36px;
+        height: 18px;
+        border-radius: 100px;
+        background-color: $light;
+        display:inline-block;
+        vertical-align: middle;
+        position: relative;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        &:after{
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            background-color: $faded-active;
+            transition: all .3s;
+            -webkit-transition: all .3s;
+            border-radius:100px;
+        }
+    }
+    input:checked + label .label-switchToggle{
+        background-color:$secondary;
+        &:after{
+            transform: translateX(18px);
+            -webkit-transform: translateX(18px);
+            background-color: $white;
+        }
+    }
+    &.switchToggle-primary{
+        label .label-switchToggle{
+            background-color: $primary-light;
+            &:after{
+                background-color: $primary;
+            }
+        }
+        input:checked + label .label-switchToggle{
+            background-color: $primary;
+            &:after{
+                background-color: $white;
+            }
+        }
+    }
+    &.switchToggle-danger{
+        label .label-switchToggle{
+            background-color: $danger-light;
+            &:after{
+                background-color: $danger;
+            }
+        }
+        input:checked + label .label-switchToggle{
+            background-color: $danger;
+            &:after{
+                background-color: $white;
+            }
+        }
+    }
+    &.switchToggle-success{
+        label .label-switchToggle{
+            background-color: $success-light;
+            &:after{
+                background-color: $success;
+            }
+        }
+        input:checked + label .label-switchToggle{
+            background-color: $success;
+            &:after{
+                background-color: $white;
+            }
+        }
+    }
+    &.switchToggle-info{
+        label .label-switchToggle{
+            background-color: $info-light;
+            &:after{
+                background-color: $info;
+            }
+        }
+        input:checked + label .label-switchToggle{
+            background-color: $info;
+            &:after{
+                background-color: $white;
+            }
+        }
+    }
+    &.switchToggle-warning{
+        label .label-switchToggle{
+            background-color: $warning-light;
+            &:after{
+                background-color: $warning;
+            }
+        }
+        input:checked + label .label-switchToggle{
+            background-color: $warning;
+            &:after{
+                background-color: $white;
+            }
+        }
+    }
+    &.switchToggle-teal{
+        label .label-switchToggle{
+            background-color: $teal-light;
+            &:after{
+                background-color: $teal;
+            }
+        }
+        input:checked + label .label-switchToggle{
+            background-color: $teal;
+            &:after{
+                background-color: $white;
+            }
+        }
+    }
+    &.switchToggle-purple{
+        label .label-switchToggle{
+            background-color: $purple-light;
+            &:after{
+                background-color: $purple;
+            }
+        }
+        input:checked + label .label-switchToggle{
+            background-color: $purple;
+            &:after{
+                background-color: $white;
+            }
+        }
+    }
+    &.switchToggle-pink{
+        label .label-switchToggle{
+            background-color: $pink-light;
+            &:after{
+                background-color: $pink;
+            }
+        }
+        input:checked + label .label-switchToggle{
+            background-color: $pink;
+            &:after{
+                background-color: $white;
+            }
+        }
+    }
+    &.switchToggle-dark{
+        label .label-switchToggle{
+            background-color: $dark-light;
+            &:after{
+                background-color: $dark;
+            }
+        }
+        input:checked + label .label-switchToggle{
+            background-color: $dark;
+            &:after{
+                background-color: $white;
+            }
+        }
+    }
+    input:disabled + label{
+        opacity: .5;
+        pointer-events: none;
+    }
+    &.switchToggle-square{
+        label .label-switchToggle{
+            border-radius: 0px;
+            &:after{
+                border-radius: 0px;
+            }
+        }
+    }
+    &.switchToggle-lg{
+        label .label-switchToggle{
+            width: 50px;
+            height: 24px;
+            &:after{
+                width: 12px;
+                height: 12px;
+                top:6px;
+                left:6px;
+            }
+        }
+        input:checked + label .label-switchToggle{
+            &:after{
+                transform: translateX(26px);
+            }
+        }
+    }
+    &.switchToggle-air{
+        label .label-switchToggle{
+            width:42px;
+            height:14px;
+            &:after{
+                width: 20px;
+                height:20px;
+                left:0px;
+                top:-3px;
+                box-shadow:0px 0px 2px 1px rgba($dark,.15);
+            }
+        }
+        input:checked + label .label-switchToggle{
+            &:after{
+                transform: translateX(22px);
+            }
+        }
+        &.switchToggle-lg{
+            label .label-switchToggle{
+                width:52px;
+                height:24px;
+                &:after{
+                    width: 28px;
+                    height:28px;
+                    left:0px;
+                    top:-2px;
+                }
+            }
+            input:checked + label .label-switchToggle{
+                &:after{
+                    transform: translateX(26px);
+                }
+            } 
+        }
+    }
+}
+.check-todo.customUi-checkbox{
+    display: block;
+    width:100%;
+    padding-left:2.5rem;
+    position:relative;
+    input{
+        left:0;
+        top:4px;
+    }
+    label .label-helper{
+        margin-left: 0px;
+    }
+    input:checked + label > *{
+        text-decoration: line-through;
+        opacity: .6;
+    }
+    label .label-checkbox {
+        position: absolute;
+        width: 20px;
+        left: 0;
+        top: 4px;
+    }
+}
+.dz-default.dz-message{
+    span{
+        opacity: .6;
+    }
+}

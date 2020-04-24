@@ -1,0 +1,83 @@
+/*
+Form wizard custom css
+Author - Design_mylife
+Project - Assan Dashboard UI
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,700,800,900');
+@import "_variables.scss";
+ .wizard-steps{
+        position: relative;
+        overflow: hidden;
+        z-index:9;
+        >li{
+            background-color: $light;
+            padding: .75rem 1rem;
+            font-size:.875rem;
+            &:first-child{
+                border-top-left-radius: 4px;
+            }
+            &:last-child{
+                border-top-right-radius: 4px;
+            }
+            &.done{
+                background-color: $success-light;
+                color: $success!important;
+            }
+            &.current{
+                background-color: $primary-light;
+                color: $primary!important;
+            }
+        }
+    }
+    .wizard-content{
+        padding: .5rem 1rem;
+        background-color: #fff;
+        border: 0px;
+        box-shadow: 0px 0px 2px 0px rgba($border,1);
+    }
+    .wizard-buttons{
+        float: right;
+        margin-top:1rem;
+        >a{
+            padding: 0rem 1.25rem;
+            height: 2rem;
+            line-height: 2rem;
+            border-radius: 4px;
+            margin-left:0px;
+            margin-right: 0px;
+            display:inline-block;
+            &.hide{
+                display:none;
+            }
+            &.wizard-next{
+                background-color: $primary;
+                border-color:rgba($primary-active,.35);
+                color:#fff;
+                &:hover:not(.disabled),&:focus:not(.disabled){
+                 color:$primary-light;
+                 background-color: $primary-active;
+                }
+            }
+            &.wizard-back{
+                background-color: $primary-light;
+                border-color:rgba($primary,.35);
+                color:$primary-active;
+                 &:hover:not(.disabled),&:focus:not(.disabled){
+                 color:$primary-light;
+                 background-color: rgba($primary,.45);
+                }
+            }
+             &.wizard-finish{
+                background-color: $success;
+                border-color:rgba($success-active,.35);
+                color:#fff;
+            }
+            &+a{
+                margin-left: .5rem;
+            }
+        }
+    }
+@media(min-width:576px){
+   
+}

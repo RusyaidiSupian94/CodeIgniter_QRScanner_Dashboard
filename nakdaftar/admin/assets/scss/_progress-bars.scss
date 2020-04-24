@@ -1,0 +1,40 @@
+/*
+Progress bars
+*/
+.progress-thumb{
+    position:relative;
+    display:inline-block;
+    img{
+            border-radius: 100%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width:110px;
+    }
+}
+.states{
+   position: absolute;
+        right:10px;
+        top:10px;
+        font-size:10px;
+        border:2px solid #fff;
+        width:12px;
+        height: 12px;
+        border-radius: 100px;  
+}
+.on{
+   background-color: $success;
+}
+.away{
+   background-color: $warning;
+}
+.dnd{
+   background-color: $danger;
+}
+.offline{
+   background-color: $light;
+}
+.progress{
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+}

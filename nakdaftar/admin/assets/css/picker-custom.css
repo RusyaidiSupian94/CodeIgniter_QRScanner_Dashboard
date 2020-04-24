@@ -1,0 +1,63 @@
+/*
+Date time picker custom style
+Author - Design_mylife
+Project - Assan Dashboard UI
+*/
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,700,800,900");
+.xdsoft_datetimepicker {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  box-shadow: none; }
+
+.xdsoft_datetimepicker .xdsoft_next, .xdsoft_datetimepicker .xdsoft_prev, .xdsoft_datetimepicker .xdsoft_today_button {
+  background-image: none !important;
+  font-size: 13px;
+  text-indent: inherit; }
+  .xdsoft_datetimepicker .xdsoft_next:before, .xdsoft_datetimepicker .xdsoft_prev:before, .xdsoft_datetimepicker .xdsoft_today_button:before {
+    font-weight: 900;
+    font-family: 'Font Awesome\ 5 Free';
+    color: rgba(24, 35, 89, 0.85); }
+
+.xdsoft_datetimepicker .xdsoft_prev:before {
+  content: '\f053'; }
+
+.xdsoft_datetimepicker .xdsoft_next:before {
+  content: '\f054'; }
+
+.xdsoft_timepicker .xdsoft_prev:before {
+  content: '\f077'; }
+
+.xdsoft_timepicker .xdsoft_next:before {
+  content: '\f078'; }
+
+.xdsoft_datetimepicker {
+  border-bottom-color: #e1eaea;
+  border-left-color: #e1eaea;
+  border-right-color: #e1eaea;
+  border-top-color: #e1eaea; }
+
+.xdsoft_datetimepicker .xdsoft_calendar td:hover, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  background-color: #86d4f5 !important;
+  border-color: rgba(105, 193, 230, 0.2) !important; }
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  background-color: #0084ff; }
+
+.xdsoft_datetimepicker .xdsoft_calendar td, .xdsoft_datetimepicker .xdsoft_calendar th, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
+  border-color: #e1eaea;
+  background-color: #f3f8fa; }
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box, .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select {
+  border-color: #e1eaea; }
+
+.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
+  background-color: #86d4f5 !important; }
+
+.xdsoft_datetimepicker .xdsoft_calendar th {
+  background-color: #f3f6fc; }
+
+.xdsoft_scrollbar > .xdsoft_scroller {
+  background-color: #edf4f7 !important;
+  border-radius: 0px; }
+
+.xdsoft_datetimepicker .xdsoft_next, .xdsoft_datetimepicker .xdsoft_prev, .xdsoft_datetimepicker .xdsoft_today_button {
+  color: #f2f6f8; }

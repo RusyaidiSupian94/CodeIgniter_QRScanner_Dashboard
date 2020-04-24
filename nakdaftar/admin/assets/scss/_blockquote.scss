@@ -1,0 +1,28 @@
+/*
+Block quotes
+*/
+.blockquote{
+    padding-left: .75rem;
+    border-left: 3px solid $primary-light;
+    &.blockquote-right{
+        padding-left: 0px;
+        padding-right: .75rem;
+        border-left:0px;
+        border-right: 3px solid $primary-light;
+        text-align:right;
+    }
+    &.blockquote-center{
+        text-align: center;
+        padding-left: 0px;
+        border-left: 0px;
+    }
+    .blockquote-footer{
+        color: inherit;
+        opacity: .6;
+        font-size: .857rem;
+    }
+    &.blockquote-dark{
+        color: #fff;
+        padding:.75rem 1rem;
+    }
+}

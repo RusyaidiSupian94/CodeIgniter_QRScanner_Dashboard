@@ -1,0 +1,52 @@
+.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
+  stroke: #2cddbe; }
+
+.ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut {
+  stroke: #f3d768; }
+
+.ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
+  stroke: #0084ff; }
+
+/* Chartist Tooltip */
+.chartist {
+  position: relative; }
+
+.chartist-tooltip {
+  position: absolute;
+  display: block;
+  width: 40px;
+  padding: .5rem;
+  border-radius: 100px;
+  opacity: 0;
+  background: #0084ff;
+  color: #e5f2ff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1000;
+  -webkit-transition: opacity .2s linear;
+  -moz-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear; }
+
+.chartist-tooltip:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  margin-top: -3px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -9px;
+  border: 9px solid transparent;
+  border-top-color: #0084ff; }
+
+.chartist-tooltip.tooltip-show {
+  opacity: 1; }
+
+.ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut {
+  stroke: #fa625e; }
+
+.ct-series-a .ct-area {
+  fill: #2cddbe; }

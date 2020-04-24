@@ -1,0 +1,75 @@
+/*
+Email App
+*/
+.table.table-mails{
+    td,th{
+        vertical-align: middle;
+    }
+    button[data-toggle="button"].btn{
+        width:auto;
+        min-width:1px;
+        &:focus,.focus,&:active,.active{
+            outline: 0!important;
+            box-shadow: none!important;
+        }
+        &.active{
+            outline: 0!important;
+            >i:before{
+                font-weight:900;
+
+            }
+        }
+    }
+    td,th{
+        padding: 1rem 1rem;
+    }
+}
+
+.table.table-mails{
+    tbody>tr{
+        opacity: 1;
+        &:hover{
+             background-color: $light;
+        }
+    }
+    tr.mail-new,tbody>tr:hover{
+        opacity: 1;
+        .mail-content,.mail-title,.mail-author-title{
+            opacity: 1;
+        }
+    }
+    tr.mail-new:hover{
+         background-color: $light;
+    }
+    thead tr th, tbody tr td{
+        border-color: $light;
+    }
+}
+.mail-title{
+    display: block;
+    font-weight: 500;
+    color:$dark;
+    opacity: .85;
+    text-transform: capitalize;
+        overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding-right: 10px;
+}
+.mail-author-title{
+    font-size: .8rem;
+    color: $primary;
+     opacity: .75;
+}
+.mail-content{
+    color: $text-body;
+     opacity: .6;
+         overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.table.table-mails tr:first-child td, .table.table-mails tr:first-child th{
+    border-top: 0px;
+}

@@ -1,0 +1,14 @@
+/*
+Modal and lightboxes;
+*/
+
+.modal-dialog{
+     .modal-content,.modal-header{
+        border-color: $border;
+    }
+    .modal-header .modal-title{
+        font-size: 1rem;
+        color: $dark;
+    }
+}
+.note-dialog .modal-dialog{ z-index:1050; }

@@ -1,0 +1,55 @@
+
+@import "_variables.scss";
+.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut{
+    stroke:$teal;
+}
+.ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut{
+    stroke:$warning;
+}
+.ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut{
+    stroke:$primary;
+}
+/* Chartist Tooltip */
+.chartist{
+    position: relative;
+}
+.chartist-tooltip {
+	position: absolute;
+	display: block;
+	width: 40px;
+	padding: .5rem;
+        border-radius: 100px;
+	opacity: 0;
+	background: $primary;
+	color: $primary-light;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	pointer-events: none;
+	z-index: 1000;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	-o-transition: opacity .2s linear;
+	transition: opacity .2s linear
+}
+.chartist-tooltip:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+        margin-top:-3px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -9px;
+	border: 9px solid transparent;
+	border-top-color: $primary;
+}
+.chartist-tooltip.tooltip-show {
+	opacity: 1
+}
+.ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut{
+    stroke:$danger;
+}
+.ct-series-a .ct-area{
+    fill:$teal;
+}

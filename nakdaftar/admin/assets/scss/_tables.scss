@@ -1,0 +1,116 @@
+/*
+Tables style
+*/
+
+.table{
+    thead th{
+        border-color: $border;
+        border-bottom-width: 1px;
+    }
+    .customUi-checkbox{
+        position: relative;
+        height:20px;
+        input{
+            width:20px!important;
+            height: 20px!important;
+            z-index:1!important;
+            cursor: pointer;   
+        }
+    }
+    th:hover,td:hover{
+        a.text-muted,a .text-muted{
+            opacity: .85!important;
+        }
+    }
+}
+.table td, .table th{
+    border-color: $border;  
+}
+.table.table-primary{
+    &.table,>td,>th{
+        background-color: rgba($primary-light,.5);
+        thead,th{
+            border-color: rgba($primary-active,.05);
+        }
+    }
+    tbody tr:hover {
+        background-color: rgba($primary,.05);
+    }
+}
+.table-hover tbody tr:hover {
+    background-color: rgba($light,1);
+}
+.table-striped tbody tr:nth-of-type(odd){
+    background-color: $light;
+}
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.table-dark{
+    background-color: $dark;
+    color: $dark-light;
+}
+.table-dark td, .table-dark th, .table-dark thead th{
+    border-color: rgba($dark-light,.25);
+}
+.table-active, .table-active>td, .table-active>th {
+    background-color: $primary-light;
+}
+.table-success, .table-success>td, .table-success>th {
+    background-color: $success-light;
+}
+.table-warning, .table-warning>td, .table-warning>th{
+    background-color: $warning-light;
+}
+.table-info, .table-info>td, .table-info>th{
+    background-color: $info-light;
+}
+.table-danger, .table-danger>td, .table-danger>th{
+    background-color: $danger-light;
+}
+.table-teal, .table-teal>td, .table-teal>th{
+    background-color: $teal-light;
+}
+.table-purple, .table-purple>td, .table-purple>th{
+    background-color: $purple-light;
+}
+.table-pink, .table-pink>td, .table-pink>th{
+    background-color: $pink-light;
+}
+.table-bordered{
+    border-color: $border;
+}
+table.table-data.dataTable{
+    border-collapse: collapse !important;
+    tr{
+        border-collapse:collapse;
+    }
+    thead th{
+        border-bottom: 0px;
+    }
+}
+table.dataTable{
+    border-collapse: collapse!important;
+}
+.dataTables_wrapper select.form-control{
+    margin: 0rem .5rem;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before{
+    background-color: $primary;
+    box-shadow:none;
+    width: 16px;
+    height: 16px;
+    display: block;
+        border: 0px;
+    border-radius: 2px;
+    line-height: 19px;
+}
+.table-contacts{
+    tr td,tr th{
+        vertical-align: middle; text-align: left;
+    }
+}

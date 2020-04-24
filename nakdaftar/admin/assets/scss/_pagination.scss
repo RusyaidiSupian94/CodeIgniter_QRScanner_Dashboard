@@ -1,0 +1,15 @@
+/*
+paginations style
+*/
+.page-link{
+    border-color: $border;
+}
+.page-item.active .page-link,.page-link:hover,.page-link:focus {
+    background-color: $primary;
+    border-color: $primary;
+    color:#fff;
+}
+.page-link:focus{
+    box-shadow: none;
+    background-color: $primary-active;
+}

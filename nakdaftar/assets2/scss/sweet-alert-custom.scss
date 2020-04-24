@@ -1,0 +1,71 @@
+/*
+Sweet alerts custom
+Author - Design_mylife
+Project - Assan Dashboard UI
+*/
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,700,800,900');
+@import "_variables.scss";
+.swal2-modal .swal2-title{
+    font-size: 1.5rem;
+    font-weight:400;
+    font-family: $font-primary;
+}
+.swal2-modal .swal2-content{
+    font-size: .85rem;
+    font-weight:400;
+     font-family: $font-primary;
+     opacity:.6;
+}
+.swal2-modal.swal2-styled,.swal2-modal .swal2-styled{
+    padding: .5rem 1rem;
+    font-weight:400;
+    line-height: 1;
+    border:1px solid rgba($dark,.1);
+    font-size:.85rem;
+box-shadow:none;
+&:focus{
+    box-shadow: none;
+    background-color: $primary-active!important;
+}
+}
+.btn-secondary.swal2-cancel{
+    background-color:$secondary!important;
+    font-family: $font-primary;
+     &:hover,&:focus{
+           box-shadow: none;
+           background-color: $secondary-active!important;
+        }
+}
+.swal2-styled.btn-confirm{
+        font-family: $font-primary!important;
+        background-color: $primary!important;
+        &:hover,&:focus{
+           box-shadow: none;
+           color:$primary-light!important;
+           background-color: $primary-active!important;
+        }
+    }
+.swal2-icon.swal2-warning{
+   color:$warning;
+   border-color:$warning;
+}
+.swal2-icon.swal2-info{
+  color:$info;
+border-color:$info;  
+}
+.swal2-input{
+    padding: .45rem 6rem;
+    border-color: $border;
+}
+.swal2-icon.swal2-success [class^=swal2-success-line]{
+    background-color: $success;
+}
+.swal2-icon .swal2-success-ring{
+    border: 2px solid $light;
+}
+.swal2-icon.swal2-question{
+    color: $info;
+}
+.swal2-icon.swal2-question,.swal2-icon.swal2-success .swal2-success-ring,.swal2-icon.swal2-warning{
+    border: 2px solid $light;
+}

@@ -1,0 +1,82 @@
+/*
+Timeline
+*/
+
+.timeline-sm{
+    position: relative;
+
+    &:before{
+        content: "";
+        position: absolute;
+        left:10px;
+        top:1rem;
+        width: 1px;
+        height: 100%;
+        background-color: $light;
+    }
+    >li{
+        padding-bottom: 1rem;
+        padding-left:2.5rem;
+        &:last-child{
+            padding-bottom: 0px;
+        }
+
+    }
+    
+}
+.timeline-alt{
+    position: relative;
+    
+    >li{
+        padding-bottom: 1rem;
+        padding-left:2.5rem;
+        position: relative;
+        &:last-child{
+            padding-bottom: 0px;
+        }
+
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        left:10px;
+        margin-left:1px;
+        top:1rem;
+        width: 2px;
+        height: 100%;
+        background-color: $light;
+        z-index: 0;
+    }
+    .tl-thumb{
+        z-index: 2;
+        position: absolute;
+        top:5px;
+        left:0;
+        display: inline-flex;
+        width:24px;
+        height:24px;
+        border-radius: 100px;
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+    .tl-content{
+            display: flex;
+    flex-direction: column;
+    width: 100%;
+        p{
+            opacity: .6;
+        }
+    }
+    >li:nth-child(even){
+        .tl-content{
+            border-radius: 5px;
+            background-color: $light;
+            padding: 1rem;
+            border-bottom: 0px;
+        }
+    }
+}

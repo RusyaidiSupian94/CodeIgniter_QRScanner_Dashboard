@@ -1,0 +1,64 @@
+/*
+Form wizard custom css
+Author - Design_mylife
+Project - Assan Dashboard UI
+*/
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,700,800,900");
+.wizard-steps {
+  position: relative;
+  overflow: hidden;
+  z-index: 9; }
+  .wizard-steps > li {
+    background-color: #f3f8fa;
+    padding: .75rem 1rem;
+    font-size: .875rem; }
+    .wizard-steps > li:first-child {
+      border-top-left-radius: 4px; }
+    .wizard-steps > li:last-child {
+      border-top-right-radius: 4px; }
+    .wizard-steps > li.done {
+      background-color: #e5fcd0;
+      color: #94df4a !important; }
+    .wizard-steps > li.current {
+      background-color: #e5f2ff;
+      color: #0084ff !important; }
+
+.wizard-content {
+  padding: .5rem 1rem;
+  background-color: #fff;
+  border: 0px;
+  box-shadow: 0px 0px 2px 0px #e1eaea; }
+
+.wizard-buttons {
+  float: right;
+  margin-top: 1rem; }
+  .wizard-buttons > a {
+    padding: 0rem 1.25rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: inline-block; }
+    .wizard-buttons > a.hide {
+      display: none; }
+    .wizard-buttons > a.wizard-next {
+      background-color: #0084ff;
+      border-color: rgba(16, 114, 206, 0.35);
+      color: #fff; }
+      .wizard-buttons > a.wizard-next:hover:not(.disabled), .wizard-buttons > a.wizard-next:focus:not(.disabled) {
+        color: #e5f2ff;
+        background-color: #1072ce; }
+    .wizard-buttons > a.wizard-back {
+      background-color: #e5f2ff;
+      border-color: rgba(0, 132, 255, 0.35);
+      color: #1072ce; }
+      .wizard-buttons > a.wizard-back:hover:not(.disabled), .wizard-buttons > a.wizard-back:focus:not(.disabled) {
+        color: #e5f2ff;
+        background-color: rgba(0, 132, 255, 0.45); }
+    .wizard-buttons > a.wizard-finish {
+      background-color: #94df4a;
+      border-color: rgba(125, 200, 53, 0.35);
+      color: #fff; }
+    .wizard-buttons > a + a {
+      margin-left: .5rem; }

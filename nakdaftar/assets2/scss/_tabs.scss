@@ -1,0 +1,14 @@
+/*
+Tabs
+*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: $primary;
+    color: $primary-light;
+}
+.profile-tabs{
+    .nav-link{
+        background-color: $white;
+        margin-right: .5rem;
+        color:$primary;
+    }
+}

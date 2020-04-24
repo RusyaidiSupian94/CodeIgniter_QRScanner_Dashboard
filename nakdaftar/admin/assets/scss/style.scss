@@ -1,0 +1,132 @@
+/*
+Assan admin - Bootstrap4 Admin template
+Version - v1.0
+Author - design_mylife
+Support - mylifedesign143@gmail.com
+*/
+
+/***Table of content
+- basic
+- buttons
+- form ui
+- layouts
+- horizontal layout
+- mini icon tooltip layout
+- metis menu
+- headers
+- dropdown-menu
+- tabs
+- tables
+- Modals
+- Progress bars
+- Cards
+- Alerts
+- Accordions
+- Breadcrumbs
+- timeline
+- pagination
+- carousel
+- badge tooltip
+- calendar
+- maps
+- Responsive
+**/
+/**
+01 - Basic css
+**/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700,900');
+@import "_variables.scss";
+@import "_base.scss";
+@import "_buttons.scss";
+@import "_form-custom-ui.scss";
+@import "_layouts.scss";
+@import "_layout-horizontal.scss";
+@import "_layout-mini-icon.scss";
+@import "_metis-menu.scss";
+@import "_header.scss";
+@import "_blockquote.scss";
+@import "_dropdown-menu.scss";
+@import "_tabs.scss";
+@import "_tables.scss";
+@import "_modal-lightboxes.scss";
+@import "_progress-bars.scss";
+@import "_cards-portlets.scss";
+@import "_alert-notifications.scss";
+@import "_accordions.scss";
+@import "_page-breadcrumbs.scss";
+@import "_timeline.scss";
+@import "_pagination.scss";
+@import "_carousel.scss";
+@import "_badge-tooltip-popover.scss";
+@import "_dialogue-card.scss";
+@import "_apps-layout.scss";
+@import "_app-email.scss";
+@import "_calendar-custom.scss";
+@import "_maps.scss";
+@import "_responsive-layouts.scss";
+
+
+/**pace css preloader**/
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 3px;
+  background: transparent;
+}
+.pace-inactive {
+  display: none;
+}
+.pace .pace-progress {
+  background-color: $info-light;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+  overflow: hidden;
+box-shadow:0px 3px 10px rgba(#000,.05);
+}
+.pace .pace-activity {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: -28px;
+  bottom: 0;
+
+
+  -webkit-animation: pace-theme-mac-osx-motion 500ms linear infinite;
+  -moz-animation: pace-theme-mac-osx-motion 500ms linear infinite;
+  -ms-animation: pace-theme-mac-osx-motion 500ms linear infinite;
+  -o-animation: pace-theme-mac-osx-motion 500ms linear infinite;
+  animation: pace-theme-mac-osx-motion 500ms linear infinite;
+}
+
+@-webkit-keyframes pace-theme-mac-osx-motion {
+  0% { -webkit-transform: none; transform: none; }
+  100% { -webkit-transform: translate(-28px, 0); transform: translate(-28px, 0); }
+}
+@-moz-keyframes pace-theme-mac-osx-motion {
+  0% { -moz-transform: none; transform: none; }
+  100% { -moz-transform: translate(-28px, 0); transform: translate(-28px, 0); }
+}
+@-o-keyframes pace-theme-mac-osx-motion {
+  0% { -o-transform: none; transform: none; }
+  100% { -o-transform: translate(-28px, 0); transform: translate(-28px, 0); }
+}
+@-ms-keyframes pace-theme-mac-osx-motion {
+  0% { -ms-transform: none; transform: none; }
+  100% { -ms-transform: translate(-28px, 0); transform: translate(-28px, 0); }
+}
+@keyframes pace-theme-mac-osx-motion {
+  0% { transform: none; transform: none; }
+  100% { transform: translate(-28px, 0); transform: translate(-28px, 0); }
+}

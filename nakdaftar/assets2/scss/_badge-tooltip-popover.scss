@@ -1,0 +1,44 @@
+
+/* 
+   Badge tooltip and popovers
+*/
+.tooltip{
+  
+}
+.tooltip-inner{
+    background-color: $dark;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before{
+     border-top-color: $dark;
+}
+.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before{
+    border-left-color: $dark;
+}
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before{
+    border-bottom-color: $dark;
+}
+.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before{
+    border-right-color: $dark;
+}
+.bs-popover-auto[x-placement^=left] .arrow::before, .bs-popover-left .arrow::before{
+    border-left-color: $border;
+}
+.bs-popover-auto[x-placement^=top] .arrow::before, .bs-popover-top .arrow::before{
+    border-top-color: $border;
+}
+.bs-popover-auto[x-placement^=right] .arrow::before, .bs-popover-right .arrow::before{
+    border-right-color: $border;
+}
+.bs-popover-auto[x-placement^=bottom] .arrow::before, .bs-popover-bottom .arrow::before{
+    border-bottom-color: $border;
+}
+.popover{
+    border-color: $border;
+}
+.popover-header{
+    background-color: $light;
+    border-bottom-color: $border;
+    font-weight: 400;
+}

@@ -1,0 +1,186 @@
+/*
+Metis menu
+*/
+.metisMenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding:1rem 0;
+    li{
+        background: none;
+        display: block;
+        line-height: 1;
+        position: relative;
+        clear: right;
+        &:after{
+            content:"";
+            display: table;
+            clear: both;
+            width: 100%;
+        }
+        >a{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 70%;
+            display: inline-block;
+            font-weight:400;
+            position: relative;
+            text-transform: capitalize;
+            padding-left: 21px;
+                text-shadow: 1px 1px 1px rgba(0,0,0,.004);
+            clear:both;
+            >.nav-label{
+                font-size: 12px;
+                opacity: 0.4;
+                display: block;
+                clear: both;
+                line-height: 20px;
+            }
+            >.nav-text{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                width: 100%;
+                line-height: 20px;
+            }
+        }
+        .nav-thumbnail{
+            float: right;
+            position:relative;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            text-transform: capitalize;
+        }
+    }
+    >li{
+        line-height:1;
+        padding-top: .25rem;
+        padding-bottom: .15rem;
+        ul{
+            margin:0px;
+            padding:0px;
+            list-style:none;
+            list-style: none;
+            clear: both;
+            >li{
+                position:relative;
+            }
+        }
+    }
+    >li{
+        a.has-arrow{
+            &:after{
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f054";
+                position: absolute;
+                right:10px;
+                top: 50%;
+                margin-top: -4px;
+                display: block;
+                width: 10px;
+                height: 10px;
+                line-height: 10px;
+                font-size:10px;
+                text-align: center;
+            }
+        }
+        >.nav-thumbnail{
+            width:36px;
+            height: 36px;
+            line-height: 36px;
+            z-index: 2;
+            right:14px;
+            top:0px;
+            font-size:18px;
+            text-align: center;
+        }
+        >a{
+            font-size: .95rem;
+            font-weight: 400;
+            line-height: 36px;
+        }
+    }
+    li.active{
+        >a.has-arrow{
+            &:after{
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+        }
+    }
+    >li>ul >li{
+        min-height:30px;
+        line-height:20px;
+        .nav-thumbnail{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            top: 0;
+            right: 17px;
+            font-size: .7rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        >a{
+            min-height:30px;
+            line-height: 29px;
+            font-weight: 400;
+            font-size: .85rem;
+            padding-left: 2rem;
+        }
+        >ul>li{
+            min-height: 24px;
+            line-height:20px;
+            .nav-thumbnail{
+                width: 24px;
+                height:24px;
+                line-height: 24px;
+                font-size: .65rem;
+                font-weight: 600;
+                right:20px;
+                top:0;
+            }
+            >a{
+                min-height: 24px;
+                line-height: 24px;
+                font-weight: 400;
+                font-size: .8rem;
+                padding-left: 2.25rem;
+            }
+        }
+    }
+    >li ul>li{
+        &:first-child{
+            padding-top:7px; 
+        }
+        &:last-child{
+            padding-bottom:7px; 
+        }
+    }
+}
+.metisMenu li{
+    >a{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    &.nav-title{
+        clear: both;
+        line-height: 36px;
+        height:36px;
+        padding-left: 21px;
+        padding-top:0rem;
+        margin:10px 0;
+        font-size:.6rem;
+        text-transform:uppercase;
+        font-weight:600;
+        color:inherit;
+        
+        >.nav-thumbnail{
+            font-size: .62rem;
+            text-transform:uppercase;
+        font-weight:700;
+        }
+    }
+}

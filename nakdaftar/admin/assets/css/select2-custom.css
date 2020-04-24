@@ -1,0 +1,61 @@
+/* 
+   Select2 custom css
+Author - Design_mylife
+Project - Assan Dashboard UI
+*/
+.select2.select2-container {
+  width: 100% !important; }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 35px; }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 33px; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  border-color: #e1eaea;
+  background-color: #f3f8fa; }
+
+.select2-container--default .select2-selection--multiple, .select2-container--default .select2-selection--single {
+  border-color: #e1eaea;
+  border-width: 1px;
+  min-height: 35px; }
+  .select2-container--default .select2-selection--multiple:focus, .select2-container--default .select2-selection--single:focus {
+    outline: 0 !important; }
+
+.select2-container--default .select2-search--dropdown .select2-search__field, .select2-search--dropdown {
+  display: none; }
+
+.select2-container--default.select2-container--focus .select2-selection--multiple, .select2-container--default.select2-container--open .select2-selection--single {
+  background-color: rgba(243, 248, 250, 0.55);
+  border-color: rgba(0, 132, 255, 0.5);
+  box-shadow: 0px 0px 6px 1px rgba(0, 132, 255, 0.1);
+  outline: 0 !important; }
+
+.select2-dropdown {
+  border-color: rgba(0, 132, 255, 0.5); }
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: #f3f8fa;
+  color: #0084ff;
+  pointer-events: none; }
+  .select2-container--default .select2-results__option[aria-selected=true]:hover {
+    background-color: #e5f2ff; }
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #f3f8fa;
+  color: #0084ff; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice, .select2-container .select2-search--inline .select2-search__field {
+  margin-top: 6px; }
+
+.select2-results__options li:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.select2-results > .select2-results__options > li {
+  border-bottom: 1px solid #e1eaea; }
+  .select2-results > .select2-results__options > li:last-child {
+    border-bottom: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px; }
